@@ -22,7 +22,9 @@ var (
 
 // GetTweet is something that you should document
 func GetTweet(request *proto.Request, log lg.Log, aux ct.Auxiliary) *proto.Response {
-	tweet, err := tweets.GetTweet()
+	getTweetReq := request.Body.(*protocol.GetTweetRequest)
+
+	tweet, err := tweets.GetTweet(getTweetReq.SearchTerm, getTweetReq.Limit)
 	if err != nil {
 		code := proto.ResponseCode_ERR_READ_FAILED
 

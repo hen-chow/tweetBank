@@ -7,7 +7,7 @@ import (
 	"github.com/ChimeraCoder/anaconda"
 )
 
-func GetTweet() (anaconda.SearchResponse, error) {
+func GetTweet(searchTerm string, limit string) (anaconda.SearchResponse, error) {
 	consumerKey := os.Getenv("PLURALSIGHT_TWEET_TWITTER_CONSUMER_KEY")
 	consumerSecret := os.Getenv("PLURALSIGHT_TWEET_TWITTER_CONSUMER_SECRET")
 	accessToken := os.Getenv("PLURALSIGHT_TWEET_TWITTER_ACCESS_TOKEN")
@@ -19,10 +19,10 @@ func GetTweet() (anaconda.SearchResponse, error) {
 
 	// setting a limit
 	v := url.Values{}
-	v.Set("count", "10")
+	v.Set("count", limit)
 
 	// Search request
-	searchResult, err := api.GetSearch("trump", v)
+	searchResult, err := api.GetSearch(searchTerm, v)
 
 	// var tweetResp Response
 	if err != nil {

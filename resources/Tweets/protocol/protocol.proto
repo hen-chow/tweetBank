@@ -19,6 +19,8 @@ message Tweet {
  * A Request that you should document
  */
 message GetTweetRequest {
+  string  searchTerm = 1;
+  string  limit = 2;
 }
 
 /**
