@@ -83,7 +83,7 @@ func tweetsProto() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "Tweets.proto", size: 546, mode: os.FileMode(420), modTime: time.Unix(1516769341, 0)}
+	info := bindataFileInfo{name: "Tweets.proto", size: 546, mode: os.FileMode(420), modTime: time.Unix(1516771515, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
