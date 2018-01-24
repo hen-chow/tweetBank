@@ -1,0 +1,20 @@
+name Tweets
+
+## Requirements for this resource
+requires (
+  banks 1.0.0-alpha.0
+)
+
+## Declare the requests that this resource can receive.
+#  NOTE: The request and reply contents are defined in ./protocol/protocol.proto
+
+request GetTweet
+
+## Declare a storage plan called "Legacy". It will be the default storage
+#  plan for this resource. Only one storage plan may be the default, and a
+#  default must be defined.
+
+storage default Legacy (
+  # Define which of the resource requests this storage plan will allow
+  dispatches GetTweet
+)

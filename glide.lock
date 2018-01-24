@@ -1,0 +1,276 @@
+hash: de501b8df4b1e8cf42342c436f684ff8b9860ec4c12fdae10f21c44d65e4b770
+updated: 2018-01-24T11:24:10.399209777+11:00
+imports:
+- name: github.com/autopilothq/banks
+  version: 4a9a1b160e0878068101e451a891d9beb11a32b4
+  repo: git@github.com:autopilothq/banks.git
+  subpackages:
+  - acceptors
+  - acceptors/nats
+  - banks
+  - client
+  - cluster
+  - command
+  - config
+  - contract
+  - contract/register
+  - contract/types
+  - discovery/cluster
+  - discovery/errors
+  - discovery/nats
+  - discovery/strategies/dns
+  - discovery/strategies/nats
+  - dispatch
+  - dispatch/registry
+  - estimator
+  - kv
+  - kv/bolt
+  - kv/comparators
+  - kv/encoding
+  - kv/keys
+  - meta
+  - morse
+  - natshelper
+  - natshelper/connection
+  - natshelper/gather
+  - natshelper/payload
+  - protocol
+  - protocol/marshalable
+  - protocol/types
+  - resource
+  - resource/core
+  - resourcefile/entities
+  - resources/Datascopes
+  - resources/Datascopes/Default
+  - resources/Datascopes/protocol
+  - resources/Ident
+  - resources/Ident/Default
+  - resources/Ident/protocol
+  - resources/Migrations
+  - resources/Migrations/Default
+  - resources/Migrations/protocol
+  - resources/Nodes
+  - resources/Nodes/Default
+  - resources/Nodes/protocol
+  - resources/NullMigrations
+  - resources/NullMigrations/Default
+  - resources/NullMigrations/protocol
+  - resources/Protocols
+  - resources/Protocols/Default
+  - resources/Protocols/protocol
+  - resources/register
+  - server
+  - server/health
+  - server/state
+  - strongbox
+  - strongbox/datascopes
+  - strongbox/keyspace
+  - strongbox/leases
+  - strongbox/nodes
+  - strongbox/nullMigrations
+  - strongbox/storageDefaults
+  - strongbox/storagePlans
+  - strongbox/tasks
+  - supervision
+  - supervision/failure
+  - supervision/tokens
+  - types
+  - util
+  - util/backoff
+  - util/hlc
+  - util/pb
+  - util/token
+- name: github.com/autopilothq/consensus
+  version: 1ff676be32e9e532e4352281b2bf43a358ed56df
+  repo: git@github.com:autopilothq/consensus.git
+  subpackages:
+  - client
+  - marshal
+  - meta
+  - nodes
+  - protocol
+  - raft
+  - raftpb
+  - storage
+  - storage/memory
+  - transport
+  - transport/http
+  - transport/pb
+  - transport/snapshotter
+  - transport/snapshotter/fs
+  - types
+  - util
+  - util/crc
+  - util/pbutil
+  - util/tlsutil
+  - wal
+- name: github.com/autopilothq/goterminus
+  version: 820ed055ea174865df4255fe4a81e45953cde3b7
+- name: github.com/autopilothq/lg
+  version: c5d7f5234ce0dc76934c3eae9eca89182d4857ea
+  repo: git@github.com:autopilothq/lg.git
+  subpackages:
+  - encoding
+  - encoding/buffer
+  - encoding/json
+  - encoding/text
+  - encoding/types
+- name: github.com/buger/jsonparser
+  version: 5096fddd2cca678b0801ece8513a06e580981fd2
+- name: github.com/coreos/bbolt
+  version: 48ea1b39c25fc1bab3506fbc712ecbaa842c4d2d
+- name: github.com/coreos/etcd
+  version: 1e1dbb23924672c6cd72c62ee0db2b45f778da71
+  subpackages:
+  - pkg/fileutil
+  - pkg/ioutil
+  - pkg/pbutil
+- name: github.com/coreos/go-semver
+  version: 8ab6407b697782a06568d4b7f1db25550ec2e4c6
+  subpackages:
+  - semver
+- name: github.com/coreos/go-systemd
+  version: 48702e0da86bd25e76cfef347e2adeb434a0d0a6
+  subpackages:
+  - daemon
+  - journal
+  - util
+- name: github.com/coreos/pkg
+  version: 3ac0863d7acf3bc44daf49afef8919af12f704ef
+  subpackages:
+  - capnslog
+- name: github.com/denisbrodbeck/machineid
+  version: 2777226d0340d8da18b49993ce2b4aeb9c1c6929
+- name: github.com/dgrijalva/jwt-go
+  version: 9ed569b5d1ac936e6494082958d63a6aa4fff99a
+- name: github.com/fsnotify/fsnotify
+  version: 4da3e2cfbabc9f751898f250b49f2439785783a1
+- name: github.com/gogo/protobuf
+  version: 1a78ea63e7f62d64c7630e5980a0dfd623545449
+  subpackages:
+  - gogoproto
+  - io
+  - proto
+  - protoc-gen-gogo/descriptor
+- name: github.com/golang/protobuf
+  version: 8ee79997227bf9b34611aee7946ae64735e6fd93
+  subpackages:
+  - proto
+- name: github.com/hashicorp/errwrap
+  version: 7554cd9344cec97297fa6649b055a8c98c2a1e55
+- name: github.com/hashicorp/go-multierror
+  version: 8c5f0ad9360406a3807ce7de6bc73269a91a6e51
+- name: github.com/hashicorp/go-version
+  version: fc61389e27c71d120f87031ca8c88a3428f372dd
+- name: github.com/hashicorp/hcl
+  version: 23c074d0eceb2b8a5bfdbb271ab780cde70f05a8
+  subpackages:
+  - hcl/ast
+  - hcl/parser
+  - hcl/scanner
+  - hcl/strconv
+  - hcl/token
+  - json/parser
+  - json/scanner
+  - json/token
+- name: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/labstack/echo
+  version: 70b5cfbb26c70668255af545f743b2bd99e6e482
+  subpackages:
+  - middleware
+- name: github.com/labstack/gommon
+  version: 447fe7433567c785af957e549aadae2bf2000071
+  subpackages:
+  - bytes
+  - color
+  - log
+  - random
+- name: github.com/magiconair/properties
+  version: 49d762b9817ba1c2e9d0c69183c2b4a8b8f1d934
+- name: github.com/mailru/easyjson
+  version: 5f62e4f3afa2f576dc86531b7df4d966b19ef8f8
+  subpackages:
+  - buffer
+  - jlexer
+  - jwriter
+- name: github.com/mattn/go-colorable
+  version: ad5389df28cdac544c99bd7b9161a0b5b6ca9d1b
+- name: github.com/mattn/go-isatty
+  version: 30a891c33c7cde7b02a981314b4228ec99380cca
+- name: github.com/miekg/dns
+  version: 6da3249dfb57fbaa16efafcd8744cee8809d80cd
+  subpackages:
+  - internal/socket
+- name: github.com/mitchellh/mapstructure
+  version: 06020f85339e21b2478f756a78e295255ffa4d6a
+- name: github.com/nats-io/go-nats
+  version: 29f9728a183bf3fa7e809e14edac00b33be72088
+  subpackages:
+  - encoders/builtin
+  - util
+- name: github.com/nats-io/nuid
+  version: a5152d67cf63cbfb5d992a395458722a45194715
+- name: github.com/pelletier/go-toml
+  version: 4e9e0ee19b60b13eb79915933f44d8ed5f268bdd
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
+- name: github.com/pkg/profile
+  version: 5b67d428864e92711fcbd2f8629456121a56d91f
+- name: github.com/spf13/afero
+  version: 5660eeed305fe5f69c8fc6cf899132a459a97064
+  subpackages:
+  - mem
+- name: github.com/spf13/cast
+  version: acbeb36b902d72a7a4c18e8f3241075e7ab763e4
+- name: github.com/spf13/cobra
+  version: b3426bbac13d7110c4d8fce456ea0012f79f3b8b
+- name: github.com/spf13/jwalterweatherman
+  version: 12bd96e66386c1960ab0f74ced1362f66f552f7b
+- name: github.com/spf13/pflag
+  version: 4c012f6dcd9546820e378d0bdda4d8fc772cdfea
+- name: github.com/spf13/viper
+  version: 8ef37cbca71638bf32f3d5e194117d4cb46da163
+- name: github.com/tylerb/graceful
+  version: 4df1190835320af7076dfcf27b3d071fd3612caf
+- name: github.com/valyala/fasttemplate
+  version: 3b874956e03f1636d171bda64b130f9135f42cff
+- name: github.com/xiang90/probing
+  version: 07dd2e8dfe18522e9c447ba95f2fe95262f63bb2
+- name: golang.org/x/crypto
+  version: 9477e0b78b9ac3d0b03822fd95422e2fe07627cd
+  subpackages:
+  - acme
+  - acme/autocert
+  - ed25519
+  - ed25519/internal/edwards25519
+- name: golang.org/x/net
+  version: b1a2d6e8c8b5fc8f601ead62536f02a8e1b6217d
+  subpackages:
+  - context
+  - context/ctxhttp
+- name: golang.org/x/sync
+  version: fd80eb99c8f653c847d294a001bdf2a3a6f768f5
+  subpackages:
+  - semaphore
+- name: golang.org/x/sys
+  version: c200b10b5d5e122be351b67af224adc6128af5bf
+  subpackages:
+  - unix
+  - windows
+  - windows/registry
+- name: golang.org/x/text
+  version: 4ee4af566555f5fbe026368b75596286a312663a
+  subpackages:
+  - transform
+  - unicode/norm
+- name: gopkg.in/yaml.v2
+  version: eb3733d160e74a9c7e442f435eb3bea458e1d19f
+testImports:
+- name: github.com/onsi/ginkgo
+  version: 00054c0bb96fc880d4e0be1b90937fad438c5290
+  subpackages:
+  - extensions/table
+  - ginkgo
+- name: github.com/onsi/gomega
+  version: f1f0f388b31eca4e2cbe7a6dd8a3a1dfddda5b1c

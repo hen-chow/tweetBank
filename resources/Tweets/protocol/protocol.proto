@@ -1,0 +1,29 @@
+syntax = "proto3";
+package Tweets;
+
+option go_package = "protocol";
+
+message Tweet {
+  int64   tweetId = 1;
+  string  text = 2;
+  string  createdAt = 3;
+  int32   favoriteCount = 4;
+  int32   retweetCount = 5;
+  string  lang = 6;
+  string  userName = 7;
+  string  userLocation = 8;
+  int32   userFollowersCount = 9;
+}
+
+/**
+ * A Request that you should document
+ */
+message GetTweetRequest {
+}
+
+/**
+ * A Response that you should document
+ */
+message GetTweetResponse {
+  repeated Tweet tweets = 1;
+}
